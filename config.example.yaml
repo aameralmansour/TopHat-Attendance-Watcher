@@ -1,0 +1,20 @@
+timezone: America/Detroit
+poll_interval_seconds: 60
+notify_errors: true
+skip_dates: ["2026-11-26", "2026-11-27"]
+courses:
+  - name: Anatomy
+    enabled: true
+    course_url: https://app.tophat.com/e/REPLACE_ANATOMY
+    attendance_url: https://app.tophat.com/e/REPLACE_ANATOMY
+    skip_dates: []
+    windows:
+      - days: [Mon, Wed]
+        start: "09:00"
+        end: "10:00"
+  - name: Biology
+    course_url: https://app.tophat.com/e/REPLACE_BIOLOGY
+    windows:
+      - days: [Tue, Thu]
+        start: "13:00"
+        end: "14:20"

@@ -1,0 +1,6 @@
+playwright>=1.48,<2
+PyYAML>=6.0.2,<7
+python-dotenv>=1.0.1,<2
+requests>=2.32.3,<3
+filelock>=3.16,<4
+tzdata>=2024.2

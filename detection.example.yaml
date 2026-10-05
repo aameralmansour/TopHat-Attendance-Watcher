@@ -1,0 +1,24 @@
+# SYNTHETIC EXAMPLES, not verified Top Hat endpoints or selectors.
+# Replace with your discovery observations, then set configured: true.
+configured: false
+strategy: network  # network, dom, both (union)
+settle_ms: 3000
+session:
+  login_url_patterns: ['/login', '/signin', '/sso', 'login\.microsoftonline\.com']
+  login_selectors: ['input[type="password"]']
+  # Strongly recommended: a course-specific marker only present after login.
+  # authenticated_selector: '[data-testid="course-navigation"]'
+network:
+  - url_pattern: '/EXAMPLE/attendance'
+    items_path: 'data.items.*'
+    state_path: state
+    open_values: [open, active]
+    id_path: id
+dom:
+  - selector: 'input[data-EXAMPLE-attendance-code]'
+    # Optional attribute on this element that identifies the attendance item.
+    id_attribute: data-attendance-id
+  # Use a specific attendance-entry container; a generic Attendance navigation
+  # link is not proof that code entry is open.
+  - selector: '[data-EXAMPLE-attendance-entry]'
+    text_pattern: '(?i)enter.*attendance.*code'

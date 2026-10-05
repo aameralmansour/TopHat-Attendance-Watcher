@@ -1,0 +1,15 @@
+[Unit]
+Description=Top Hat attendance notification watcher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/ABSOLUTE/PROJECT
+ExecStart=/ABSOLUTE/PROJECT/.venv/bin/python /ABSOLUTE/PROJECT/main.py run
+Restart=always
+RestartSec=60
+UMask=0077
+
+[Install]
+WantedBy=default.target

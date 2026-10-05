@@ -1,0 +1,11 @@
+.env
+config.yaml
+detection.yaml
+profile/
+discovery/
+logs/
+*.sqlite3*
+*.lock
+.venv/
+__pycache__/
+.DS_Store

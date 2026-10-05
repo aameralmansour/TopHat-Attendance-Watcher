@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>Label</key><string>com.local.tophat-watcher</string>
+<key>ProgramArguments</key><array><string>/ABSOLUTE/PROJECT/.venv/bin/python</string><string>/ABSOLUTE/PROJECT/main.py</string><string>run</string></array>
+<key>WorkingDirectory</key><string>/ABSOLUTE/PROJECT</string>
+<key>RunAtLoad</key><true/>
+<key>KeepAlive</key><true/>
+<key>ThrottleInterval</key><integer>60</integer>
+<key>StandardOutPath</key><string>/ABSOLUTE/PROJECT/logs/service.out</string>
+<key>StandardErrorPath</key><string>/ABSOLUTE/PROJECT/logs/service.err</string>
+</dict></plist>
