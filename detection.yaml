@@ -1,0 +1,22 @@
+configured: true
+strategy: dom
+settle_ms: 3000
+
+session:
+  login_url_patterns: ['/login', '/signin', '/sso']
+  login_selectors: ['input[type="password"]']
+
+dom:
+  - selector: '[id="tophat.new-attendance-item-notification"]'
+    text_pattern: 'Attendance is being taken'
+
+# Confirmation requires a successful response for a currently active attendance item.
+presence:
+  check_missing_responses: true
+  active_url_pattern: '^https://app\.tophat\.com/api/v3/attendance/get_active_attendance/(?:\?.*)?$'
+  active_items_path: '*'
+  active_id_path: id
+  active_state_path: status
+  active_values: [active_visible]
+  response_url_pattern: '^https://app\.tophat\.com/api/v3/attendance/(?P<id>[0-9]+)/response/(?:\?.*)?$'
+  confirmed_path: correct
