@@ -1,0 +1,53 @@
+timezone: America/Detroit
+poll_interval_seconds: 60
+notify_errors: true
+skip_dates: []
+courses:
+  - name: CBL
+    enabled: true
+    course_url: https://app.tophat.com/e/671500
+    attendance_url: https://app.tophat.com/e/671500
+    skip_dates: []
+    windows:
+      - days: [Thu]
+        start: "12:45"
+        end: "15:30"
+  - name: MedPath
+    enabled: true
+    course_url: https://app.tophat.com/e/483554
+    attendance_url: https://app.tophat.com/e/483554
+    skip_dates: []
+    windows:
+      - days: [Thu]
+        start: "10:00"
+        end: "11:45"
+  - name: BSS1
+    enabled: true
+    course_url: https://app.tophat.com/e/557863
+    attendance_url: https://app.tophat.com/e/557863
+    skip_dates: []
+    windows:
+      - days: [Mon]
+        start: "14:45"
+        end: "17:00"
+  - name: BSS2
+    enabled: true
+    course_url: https://app.tophat.com/e/565122
+    attendance_url: https://app.tophat.com/e/565122
+    skip_dates: []
+    windows:
+      - days: [Thu]
+        start: "07:45"
+        end: "10:00"
+  - name: Class Meeting
+    enabled: true
+    course_url: https://app.tophat.com/e/526566
+    attendance_url: https://app.tophat.com/e/526566
+    skip_dates: []
+    windows:
+      - days: [Mon]
+        start: "07:45"
+        end: "09:45"
+
+
+   
